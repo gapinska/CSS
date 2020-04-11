@@ -98,6 +98,11 @@ header:after {
   animation-delay: 1.1s;
 }
 
+.header-down-arrow img {
+  animation: fade-slide-up 1s 1s ease-out forwards;
+  opacity: 0;
+}
+
 @keyframes fade-slide-down {
   0% {
     opacity: 0;
@@ -106,6 +111,18 @@ header:after {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+
   }
 }
 
